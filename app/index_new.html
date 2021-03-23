@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Грузоперевозки</title>
+    <meta name="description" content="Грузоперевозки" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body id="top">
+    <header
+      class="block header-wr wow fadeInUp"
+      data-wow-duration=".6s"
+      data-wow-delay=".3s"
+    >
+      <div class="container">
+        <div class="header">
+          <div class="header__logo">
+            <a href="#top"
+              ><img src="./images/dest/logo.svg" alt="Логотип"
+            /></a>
+          </div>
+          <a href="tel:+78007076374" class="header__phone">
+            <div class="header__icon">
+              <div class="header__img">
+                <img src="./images/dest/phone.svg" alt="" />
+              </div>
+              <div class="header__anim">
+                <div class="circle" style="animation-delay: 0s"></div>
+                <div class="circle" style="animation-delay: 0.5s"></div>
+                <div class="circle" style="animation-delay: 1s"></div>
+                <div class="circle" style="animation-delay: 1.5s"></div>
+              </div>
+            </div>
+            <div>8 800 707 63 74</div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="video"
+      style="
+        z-index: 0;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      "
+    >
+      <video
+        style="width: 100%; height: 100%"
+        poster="./images/dest/background.jpg"
+        muted="muted"
+        playsinline=""
+        autoplay="autoplay"
+        loop="loop"
+        class="video-bg"
+        preload="metadata"
+      >
+        <source src="./images/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="block hero-text-wr">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Закажите перевозку у нас и экономьте до 30% бюджета</h1>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="block bottom-panel wow fadeInUp"
+      data-wow-duration=".6s"
+      data-wow-delay=".3s"
+    >
+      <div id="observer" class="bottom-panel__button">Преимущества</div>
+      <div id="order_button" class="bottom-panel__button">Оформить заявку</div>
+    </div>
+
+    <main id="parent-scroll">
+      <section class="block main-content">
+        <div class="half-container" data-title="Преимущества">
+          <h2 data-parallax='{"y": -10, "from-scroll": 500, "distance": 300}'>
+            Вам больше не придется переживать за судьбу груза
+          </h2>
+          <ul class="advantages">
+            <li
+              data-parallax='{"y": -3, "distance": 300}'
+              class="advantages__item"
+            >
+              <img src="./images/dest/advantages/1.svg" alt="" />
+              <div class="advantages__text">
+                Мы оперативно и круглосточно поставляем машины в любой регион
+                России
+              </div>
+            </li>
+            <li
+              data-parallax='{"y": -50, "distance": 300}'
+              class="advantages__item"
+            >
+              <img src="./images/dest/advantages/2.svg" alt="" />
+              <div class="advantages__text">
+                Даем возможность отслеживать местоположение машины с вашим
+                грузом в онлайн-режиме
+              </div>
+            </li>
+            <li
+              data-parallax='{"y": -80, "distance": 300}'
+              class="advantages__item"
+            >
+              <img src="./images/dest/advantages/3.svg" alt="" />
+              <div class="advantages__text">
+                При подписании договора предоставляем страховку, чтобы защитить
+                вас от непредвиденных ситуаций
+              </div>
+            </li>
+            <li
+              data-parallax='{"y": -120, "distance": 300}'
+              class="advantages__item"
+            >
+              <img src="./images/dest/advantages/4.svg" alt="" />
+              <div class="advantages__text">
+                Работаем круглосуточно, чтобы вы могли решить любой вопрос по
+                работе с нами в любой точке страны
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block main-content">
+        <div class="half-container" data-title="Рассчитать стоимость">
+          <h2 class="count" data-parallax='{"y": -70, "distance": 300}'>
+            Рассчитать стоимость
+          </h2>
+          <h3 class="count" data-parallax='{"y": -80, "distance": 300}'>
+            Отправить груз
+          </h3>
+          <div class="count" data-parallax='{"y": -90, "distance": 300}'>
+            <div class="count__form">
+              <div class="count__caption count__tip">
+                <a class="js-count-same" href="#">По городу</a>
+              </div>
+              <input type="text" name="city1" id="city1" />
+              <img
+                class="js-count-switch count__switch"
+                src="./images/dest/arrows.svg"
+                alt=""
+              />
+              <input type="text" name="city2" id="city2" />
+            </div>
+            <div class="count__caption">
+              от 370 ₽, скорейшее прибытие – через 1 день
+            </div>
+            <div class="js-order-cities-btn count__btn">
+              Рассчитать и заказать
+            </div>
+            <form id="js-check-order-status">
+              <h3>Проверить статус заказа</h3>
+              <div class="count__form count__form--100 count__form--search">
+                <input type="text" name="tracking" id="tracking" />
+              </div>
+              <div class="count__caption">
+                <a href="#">Не знаете номер заказа?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="block main-content">
+        <div class="half-container" data-title="Наши машины">
+          <h2>Наши машины</h2>
+          <div class="trucks">
+            <div
+              class="trucks__item wow fadeInUp"
+              data-wow-duration=".2s"
+              data-wow-delay=".1s"
+            >
+              <img src="./images/dest/trucks/1.png" alt="" />
+              <div class="trucks__features">
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Длина</div>
+                  <div class="trucks__featurevalue">13,2 - 13,6м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Высота</div>
+                  <div class="trucks__featurevalue">2,4 - 2,7м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Ширина</div>
+                  <div class="trucks__featurevalue">2,43 - 2,5м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Объем</div>
+                  <div class="trucks__featurevalue">82 - 92м3</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="trucks__item wow fadeInUp"
+              data-wow-duration=".2s"
+              data-wow-delay=".1s"
+            >
+              <img src="./images/dest/trucks/2.png" alt="" />
+              <div class="trucks__features">
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Длина</div>
+                  <div class="trucks__featurevalue">13,6м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Высота</div>
+                  <div class="trucks__featurevalue">
+                    наименьшая: 2,5 - 2,7м <br />
+                    наибольшая: 3,15 - 3,5м
+                  </div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Ширина</div>
+                  <div class="trucks__featurevalue">2,45м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Объем</div>
+                  <div class="trucks__featurevalue">86 - 110м3</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="trucks__item wow fadeInUp"
+              data-wow-duration=".2s"
+              data-wow-delay=".1s"
+            >
+              <img src="./images/dest/trucks/3.png" alt="" />
+              <div class="trucks__features">
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Длина</div>
+                  <div class="trucks__featurevalue">13,6м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Высота</div>
+                  <div class="trucks__featurevalue">3м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Ширина</div>
+                  <div class="trucks__featurevalue">2,45м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Объем</div>
+                  <div class="trucks__featurevalue">100м3</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="trucks__item wow fadeInUp"
+              data-wow-duration=".2s"
+              data-wow-delay=".1s"
+            >
+              <img src="./images/dest/trucks/4.png" alt="" />
+              <div class="trucks__features">
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Длина</div>
+                  <div class="trucks__featurevalue">13,6 - 16м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Высота</div>
+                  <div class="trucks__featurevalue">2,6 - 3м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Ширина</div>
+                  <div class="trucks__featurevalue">2,43 - 2,45м</div>
+                </div>
+                <div class="trucks__feature">
+                  <div class="trucks__featurename">Объем</div>
+                  <div class="trucks__featurevalue">110 - 120м3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block main-content main-content--last">
+        <div class="half-container" data-title="Принципы работы">
+          <h2>Ищем не просто клиентов а партнеров</h2>
+          <ul class="advantages">
+            <li
+              class="advantages__item wow fadeInUp"
+              data-wow-duration=".2s"
+              data-wow-delay=".1s"
+            >
+              <img src="./images/dest/features/1.svg" alt="" />
+              <div class="advantages__text">
+                <h3>Максимально выгодные условия перевозок</h3>
+                Мы хотим, чтобы цена на наши услуги была комфортна для вас. Цена
+                будет рассчитываться из ваших запросов
+              </div>
+            </li>
+            <li
+              class="advantages__item wow fadeInUp"
+              data-wow-duration=".2s"
+              data-wow-delay=".1s"
+            >
+              <img src="./images/dest/features/2.svg" alt="" />
+              <div class="advantages__text">
+                <h3>Круглосуточную поставку машин по всей России</h3>
+                В любой точке России вы можете рассчитывать на выполнение
+                заказа: оперативную погрузку и доставку
+              </div>
+            </li>
+            <li
+              class="advantages__item wow fadeInUp"
+              data-wow-duration=".2s"
+              data-wow-delay=".1s"
+            >
+              <img src="./images/dest/features/5.svg" alt="" />
+              <div class="advantages__text">
+                <h3>Расширьте географию перевозок по всей стране с нами</h3>
+                Россия очень большая, а когда есть надежный партнер, который
+                может работать в любой ее точке
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block main-content main-content--dark">
+        <div class="half-container half-container--dark" data-title="">
+          <footer class="footer">
+            <div class="footer__links">
+              <div class="footer__block">
+                <h3>Вопросы</h3>
+                <ul class="footer__items">
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/стоимость и сроки.pdf"
+                      >Стоимость и сроки</a
+                    >
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/отправка груза.pdf"
+                      >Отправка груза</a
+                    >
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/получение груза.docx.pdf"
+                      >Получение груза</a
+                    >
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a class="js-order-management" href="#"
+                      >Управление заказом</a
+                    >
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/оплата.docx.pdf">Оплата</a>
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/договор.pdf">Договор</a>
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/бухгалтерские документы.pdf"
+                      >Бухгалтерские документы</a
+                    >
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/документы.docx.pdf"
+                      >Документы</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__block">
+                <h3>Технологии</h3>
+                <ul class="footer__items">
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/страхование.pdf"
+                      >Страхование грузов</a
+                    >
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/направление перевозок.pdf"
+                      >Направления перевозок</a
+                    >
+                  </li>
+                  <li
+                    class="footer__item wow fadeInRight"
+                    data-wow-duration=".1s"
+                    data-wow-delay="0s"
+                  >
+                    <a target="_blank" href="./docs/все услуги.pdf"
+                      >Все услуги</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__info">
+              <ul class="footer__info-links">
+                <li>
+                  <a href="tel:+78007076374"> 8 800 707 63 74 </a>
+                </li>
+                <li>
+                  <a href="#"> Правовая&nbsp;информация </a>
+                </li>
+                <li>
+                  <a href="#"> Адреса и контакты </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__copyright">
+              <a href="#">Разработано в МА Космос</a>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <div class="form" id="form1">
+      <div class="form__body">
+        <div class="form__body-inner">
+          <div class="form__header">Оставить заявку</div>
+          <form id="sendmail_form" method="post">
+            <div class="form__text">
+              <label class="form__label" for="form_name">Ваше имя</label>
+              <input
+                type="text"
+                name="name"
+                id="form_name"
+                placeholder="Иван Иванов"
+              />
+              <br />
+              <label class="form__label" for="forn_phone"
+                >Ваш номер телефона</label
+              >
+              <input
+                type="tel"
+                name="phone"
+                id="form_phone"
+                placeholder="+7 (___) ___-__-__"
+              />
+
+              <button type="submit" id="form_submit" class="form__btn">
+                Отправить заявку
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="js-form-close form__close"></div>
+      </div>
+    </div>
+
+    <div class="form" id="form2">
+      <div class="form__body">
+        <div class="form__body-inner">
+          <div class="form__header">Спасибо, ваша заявка принята</div>
+          <div class="form__text">
+            <p>
+              Наши менеджеры свяжутся с вами для подтверждения записи и
+              уточнения деталей
+            </p>
+            <div class="js-form-continue form__btn">Продолжить</div>
+          </div>
+        </div>
+        <div class="js-form-close form__close"></div>
+      </div>
+    </div>
+
+    <div class="form" id="form3">
+      <div class="form__body">
+        <div class="form__body-inner">
+          <div class="form__header">Эта страница находится в разработке</div>
+          <div class="form__text">
+            <p>Пожалуйста, свяжитесь с нами по телефону</p>
+            <div class="js-form-continue form__btn">Продолжить</div>
+          </div>
+        </div>
+        <div class="js-form-close form__close"></div>
+      </div>
+    </div>
+
+    <div class="loader">
+      <img class="loader__logo" src="./images/dest/logo.svg" alt="" />
+    </div>
+    <script src="js/app.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
